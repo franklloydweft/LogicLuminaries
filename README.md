@@ -13,6 +13,8 @@
 
 ### Project Abstract
 
+## NOTICE: This branch is my own personal branch ([Bella](https://github.com/franklloydweft)) with updated Docker running configurations for my own use as of 11/03/2026
+
 The Sudoku game software is a straightforward and engaging puzzle application suitable for _all skill levels_. It has an intuitive interface, with options to choose different difficulty levels. The game involves filling a 9x9 grid so that each column, row, and 3x3 subgrid contains all digits from 1 to 9. This project aims to provide a fun and challenging experience for users, enhancing their problem-solving skills and concentration.
 
 <!-- This was the example paragraph that is being commented out.
@@ -123,6 +125,8 @@ As of now there is an issue where games pages are accessible to non-users, howev
 
 You need at least 4 GB of RAM, a 64-bit kernel with CPU support for virtualization, and a Docker Desktop installed. Then run these commands:
 ### *THESE COMMANDS ARE DEPRECATED AND ONLY USABLE THROUGH THE CORRESPONDING UW MADISON GITLAB PROJECT*
+### All that is necessary on this branch is to start up a container in docker desktop.
+
 ``` sh
 ssh -L localhost:8000:localhost:8000 -L localhost:3000:localhost:3000 <username>@cs506-team-10.cs.wisc.edu
 cd /nobackup/
