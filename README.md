@@ -1,7 +1,5 @@
 # Sudoku by Logic Luminaries
 
-[![pipeline](https://git.doit.wisc.edu/cdis/cs/courses/cs506/sp2024/team/mondaywednesdaylecture/T_10/logicluminaries/badges/main/pipeline.svg)](https://git.doit.wisc.edu/cdis/cs/courses/cs506/sp2024/team/mondaywednesdaylecture/T_10/logicluminaries/-/pipelines)
-[![coverage](https://git.doit.wisc.edu/cdis/cs/courses/cs506/sp2024/team/mondaywednesdaylecture/T_10/logicluminaries/badges/main/coverage.svg?job=unit_test_backend)](https://git.doit.wisc.edu/cdis/cs/courses/cs506/sp2024/team/mondaywednesdaylecture/T_10/logicluminaries/-/graphs/main/charts)
 [![Python Version](https://img.shields.io/badge/python-3.12-blue)](https://docs.python.org/3.12/)
 [![Django Version](https://img.shields.io/badge/django-5.0.2-green)](https://docs.djangoproject.com/en/5.0/releases/5.0.2/)
 [![React Version](https://img.shields.io/badge/react-18.0.2-blue)](https://react.dev/)
@@ -15,7 +13,7 @@
 
 ### Project Abstract
 
-The Sudoku game software is a straightforward and engaging puzzle application suitable for _all skill levels_. It has an intuitive interface, with options to choose different difficulty levels. Key features include hints for assistance and a timer for tracking game duration. The game involves filling a 9x9 grid so that each column, row, and 3x3 subgrid contains all digits from 1 to 9. This project aims to provide a fun and challenging experience for users, enhancing their problem-solving skills and concentration.
+The Sudoku game software is a straightforward and engaging puzzle application suitable for _all skill levels_. It has an intuitive interface, with options to choose different difficulty levels. The game involves filling a 9x9 grid so that each column, row, and 3x3 subgrid contains all digits from 1 to 9. This project aims to provide a fun and challenging experience for users, enhancing their problem-solving skills and concentration.
 
 <!-- This was the example paragraph that is being commented out.
 This is an example paragraph written in markdown. You can use *italics*, **bold**, and other formatting options. You can also <u>use inline html</u> to format your text. The example sections included in this document are not necessarily all the sections you will want, and it is possible that you won't use all the one's provided. It is your responsibility to create a document that adequately conveys all the information about your project specifications and requirements.
@@ -26,7 +24,7 @@ This is an example paragraph written in markdown. You can use *italics*, **bold*
 
 <!--A brief description of the customer for this software, both in general (the population who might eventually use such a system) and specifically for this document (the customer(s) who informed this document). Every project will have a customer from the CS506 instructional staff. Requirements should not be derived simply from discussion among team members. Ideally your customer should not only talk to you about requirements but also be excited later in the semester to use the system.-->
 
-The target customers for this Sudoku game software are puzzle enthusiasts of all ages and skill levels. It appeals to those who enjoy logical challenges and brain exercises, ranging from casual players seeking a fun pastime to serious puzzle solvers looking to test their skills. The game's user-friendly design and helpful features like hints and a timer make it accessible and engaging for a wide audience.
+The target customers for this Sudoku game software are puzzle enthusiasts of all ages and skill levels. It appeals to those who enjoy logical challenges and brain exercises, ranging from casual players seeking a fun pastime to serious puzzle solvers looking to test their skills. The game's user-friendly design and helpful features make it accessible and engaging for a wide audience.
 
 ### User Requirements
 
@@ -80,23 +78,23 @@ The target customers for this Sudoku game software are puzzle enthusiasts of all
       1. Lists
 -->
 
-- Issues 1-18 Setting up communitcation, choosing roles, choosing stack, setting up gitlab to our liking
+- Issues 1-18 Setting up communication, choosing roles, choosing stack, setting up gitlab to our liking
 - Issues 19-21 Installing software and getting set up with React, MySQL, and Django
 - Issues 22-53 Defining backend models, frontend interface, integrating the two
 - Issues 54-60 Making adjustments to previous definitions after completing walking skeleton, implementing styling
 - Issues 61-69 Adding integrated functionality to walking skeleton, coverage testing for generation algorithm
 - Issues 70-72 Completing frontend/backend/database data transfer, expanding coverage testing, adding win screen
-- Issues 73-84 Adding continous deployment, static analysis, screens, improving algo, and saving initial state
+- Issues 73-84 Adding continuous deployment, static analysis, screens, improving algo, and saving initial state
 - Issues 85-97 Handling blue/black, rework UI, fix, show progress, and handle duplicate emails
 - Issues 98-107 Implement and add killer Sudoku variant, killer tests, 100% coverage, sphinx docs
-- Issues 108-134 Refactor, update views, add badges, more coments, adding final diagrams and research
+- Issues 108-134 Refactor, update views, add badges, more comments, adding final diagrams and research
 
 #### Main Epics
 
 | ID     | Description                                                                                | Priority | Status   |
 | ------ | ------------------------------------------------------------------------------------------ | -------- | -------- |
 | EPIC#1 | Generate, Backend, 9x9 grid of puzzle and solution                                         | High     | Complete |
-| EPIC#2 | Provide, Backend, variaing levels of difficulty                                            | High     | Complete |
+| EPIC#2 | Provide, Backend, varying levels of difficulty                                             | High     | Complete |
 | EPIC#3 | Store the values, Data Wrangler, of the the puzzle grid and solution in the MySQL Database | High     | Complete |
 | EPIC#4 | Create an Interface, front end, where a user can solve the puzzle                          | Med      | Complete |
 | EPIC#5 | (Stretch Goals) Support multiple variants of Sudoku, such as killer, etc.                  | Low      | Open     |
@@ -108,7 +106,7 @@ The target customers for this Sudoku game software are puzzle enthusiasts of all
 
 Link to Figma prototype board: [Prototype](https://www.figma.com/file/sHQWq1l1Ohp6OeOpo6M7Uj/Sudoku-Prototype?type=design&node-id=0%3A1&mode=design&t=vHhiSbuQ8qf681xa-1)
 
-Intentionally designed with accessibility and simplicity in mind (contrasting colors that are colorblind friendly, large and easy to read typeface). Lots of sudoku apps on the web are needlessly complicated, ours will not be. This site is a simple place to solve boards, no more, no less, and the design should reflect that.
+Intentionally designed with accessibility and simplicity in mind (contrasting colors that are colorblind friendly, large and easy to read typeface). Lots of sudoku apps on the web are needlessly complicated, ours will not be. This site is a simple place to solve boards, no more, no less, and the design reflects that.
 
 <!--NOTE: Please include illustrations or screenshots of what your user interface would look like -- even if they’re rough -- and interleave it with your description.-->
 
@@ -117,14 +115,14 @@ Intentionally designed with accessibility and simplicity in mind (contrasting co
 ### Security Requirements
 
 <!--Discuss what security requirements are necessary and why. Are there privacy or confidentiality issues? Is your system vulnerable to denial-of-service attacks?-->
-As of now there is an issue where games pages are accessible to non-users, however they cannot load or save boards without an account to post to the database. So, those pages that are accessible are ultimately useless without logging in anyways.
+As of now there is an issue where games pages are accessible to non-users, however they cannot load or save boards without an account to post to the database. So, those pages that are accessible are ultimately useless without logging in.
 
 ### System Requirements, Installation, and Usage
 
 <!--List here all of the external entities, other than users, on which your system will depend. For example, if your system inter-operates with sendmail, or if you will depend on Apache for the web server, or if you must target both Unix and Windows, list those requirements here. List also memory requirements, performance/speed requirements, data capacity requirements, if applicable.-->
 
 You need at least 4 GB of RAM, a 64-bit kernel with CPU support for virtualization, and a Docker Desktop installed. Then run these commands:
-
+### *THESE COMMANDS ARE DEPRECATED AND ONLY USABLE THROUGH THE CORRESPONDING UW MADISON GITLAB PROJECT*
 ``` sh
 ssh -L localhost:8000:localhost:8000 -L localhost:3000:localhost:3000 <username>@cs506-team-10.cs.wisc.edu
 cd /nobackup/
@@ -309,12 +307,12 @@ See CodingStandardsDocument for a list of our design paradigms.
 | Integration Manager            | Grace      | Nima       |
 | QA Tester / Jack of All Trades | Carlos     | Claire     |
 
-- Every member should write code using test driven devolopment
+- Every member should write code using test driven development
 - Every member should write their own documentation in how to do stuff (so that another person can follow the instructions)
 
 
 ## Project status
 
-Healthy and progressing towards completion.
+This project was closed as of the finish of UW Madison's Spring 2024 semester.
 
 <!--If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.-->
